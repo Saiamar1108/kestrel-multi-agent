@@ -1,0 +1,10 @@
+langgraph
+langchain-core
+langchain-groq
+langsmith
+sentence-transformers
+faiss-cpu
+gradio
+python-dotenv
+numpy
+pydantic

@@ -1,0 +1,87 @@
+{
+  "evaluation_summary": {
+    "total_questions": 18,
+    "successful_evaluations": 18,
+    "failed_evaluations": 0,
+    "questions_by_type": {
+      "single_hop": 3,
+      "multi_hop": 3,
+      "conflicting": 3,
+      "unsupported": 3,
+      "follow_up": 6
+    }
+  },
+  "aggregate": {
+    "retrieval_quality": 0.6778,
+    "faithfulness": 0.6556,
+    "relevance": 0.5167,
+    "end_to_end_correctness": 0.4222,
+    "citation_precision": 0.2222,
+    "citation_recall": 0.5
+  },
+  "breakdown_by_type": {
+    "single_hop": {
+      "question_count": 3,
+      "retrieval_quality": 1.0,
+      "faithfulness": 1.0,
+      "relevance": 0.8667,
+      "end_to_end_correctness": 0.8333,
+      "citation_precision": 0.1111,
+      "citation_recall": 0.3333,
+      "total_wall_clock_seconds": 36.0702
+    },
+    "multi_hop": {
+      "question_count": 3,
+      "retrieval_quality": 0.3333,
+      "faithfulness": 0.6333,
+      "relevance": 0.6333,
+      "end_to_end_correctness": 0.5667,
+      "citation_precision": 0.3333,
+      "citation_recall": 0.3333,
+      "total_wall_clock_seconds": 28.7376
+    },
+    "conflicting": {
+      "question_count": 3,
+      "retrieval_quality": 0.7222,
+      "faithfulness": 0.9,
+      "relevance": 0.6333,
+      "end_to_end_correctness": 0.4667,
+      "citation_precision": 0.4444,
+      "citation_recall": 0.5,
+      "total_wall_clock_seconds": 28.1016
+    },
+    "unsupported": {
+      "question_count": 3,
+      "retrieval_quality": null,
+      "faithfulness": 0.3333,
+      "relevance": 0.0,
+      "end_to_end_correctness": 0.0,
+      "citation_precision": 0.0,
+      "citation_recall": null,
+      "total_wall_clock_seconds": 28.4128
+    },
+    "follow_up": {
+      "question_count": 6,
+      "retrieval_quality": 0.6667,
+      "faithfulness": 0.5333,
+      "relevance": 0.4833,
+      "end_to_end_correctness": 0.3333,
+      "citation_precision": 0.2222,
+      "citation_recall": 0.6667,
+      "total_wall_clock_seconds": 52.3903
+    }
+  },
+  "total_token_usage": null,
+  "total_wall_clock_seconds": 173.7125,
+  "generation_model": "groq/compound-mini",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "limitations_and_notes": {
+    "total_token_usage": "Token counts were not logged in results/eval_results.jsonl during evaluation execution.",
+    "relevance": "LLM judge score (0.0 to 1.0) evaluating whether the generated answer directly addresses the user question.",
+    "end_to_end_correctness": "LLM judge score (0.0 to 1.0) evaluating semantic consistency and factual correctness against the expected ground truth answer.",
+    "faithfulness": "LLM judge score (0.0 to 1.0) evaluating whether all factual claims in the synthesized answer are supported by corpus evidence without hallucination.",
+    "retrieval_quality": "Computed as average recall of expected chunk IDs in the retrieved top-k chunks.",
+    "citation_precision": "Computed as the ratio of cited chunk IDs that match expected ground-truth chunk IDs.",
+    "citation_recall": "Computed as the fraction of expected ground-truth chunk IDs that are explicitly cited in the synthesized answer."
+  }
+}
