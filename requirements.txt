@@ -1,6 +1,7 @@
 langgraph
 langchain-core
 langchain-groq
+groq
 langsmith
 sentence-transformers
 faiss-cpu
